@@ -10,7 +10,7 @@
  * @OA\Get(
  *      path="/user/me",
  *      operationId="getUser",
- *      tags={"UserResponse"},
+ *      tags={"User"},
  *      security={{"passport": {}}},
  *      summary="Get UserResponse",
  *      description="Bearer token is required",
@@ -31,7 +31,7 @@
  * @OA\Get(
  *      path="/user/search",
  *      operationId="SearchUser",
- *      tags={"UserResponse"},
+ *      tags={"User"},
  *      security={{"passport": {}}},
  *      summary="Search a UserResponse",
  *      description="Bearer token is required",

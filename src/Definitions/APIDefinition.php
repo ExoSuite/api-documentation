@@ -8,7 +8,7 @@
 
 
 /**
- * @OA\Info(title="ExoSuite Users API", version="0.0.1")
+ * @OA\Info(title="ExoSuite Users API", version="0.1.0")
  **/
 
 /**
