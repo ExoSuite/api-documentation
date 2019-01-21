@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: loiclopez
+ * UserResponse: loiclopez
  * Date: 20/09/2018
  * Time: 16:33
  */
@@ -10,14 +10,14 @@
  * @OA\Get(
  *      path="/user/me",
  *      operationId="getUser",
- *      tags={"User"},
+ *      tags={"UserResponse"},
  *      security={{"passport": {}}},
- *      summary="Get User",
+ *      summary="Get UserResponse",
  *      description="Bearer token is required",
  *      @OA\Response(
  *          response=200,
  *          description="successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/User")
+ *          @OA\JsonContent(ref="#/components/schemas/UserResponse")
  *       ),
  *       @OA\Response(
  *          response=401,
@@ -31,9 +31,9 @@
  * @OA\Get(
  *      path="/user/search",
  *      operationId="SearchUser",
- *      tags={"User"},
+ *      tags={"UserResponse"},
  *      security={{"passport": {}}},
- *      summary="Search a User",
+ *      summary="Search a UserResponse",
  *      description="Bearer token is required",
  *      @OA\Parameter(
  *          name="text",
@@ -51,7 +51,7 @@
  *          description="successful operation",
  *          @OA\JsonContent(
  *              type="array",
- *              @OA\Items(ref="#/components/schemas/User")
+ *              @OA\Items(ref="#/components/schemas/UserResponse")
  *          )
  *       ),
  *       @OA\Response(

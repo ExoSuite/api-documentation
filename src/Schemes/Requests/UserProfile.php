@@ -2,7 +2,7 @@
 
 /**
  * @OA\Schema(
- *     schema="UserProfile.php"
+ *     schema="UserProfile"
  *  )
  */
 class UserProfile
