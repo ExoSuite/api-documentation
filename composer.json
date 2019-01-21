@@ -1,0 +1,25 @@
+{
+    "name": "exosuite/api-documentation",
+    "type": "project",
+    "description": "ExoSuite Users API Documentation",
+    "require": {
+        "php": "^7.1.3",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-xml": "*",
+        "darkaonline/l5-swagger": "5.7.*"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\" : "src/",
+            "App\\": "app/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
