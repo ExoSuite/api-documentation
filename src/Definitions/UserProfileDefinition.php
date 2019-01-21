@@ -10,13 +10,13 @@
  * @OA\Post(
  *      path="/user/me/profile",
  *      operationId="createUserProfile",
- *      tags={"UserProfile"},
+ *      tags={"UserProfile.php"},
  *      security={{"passport": {}}},
  *      @OA\RequestBody(
  *         required=false,
  *         @OA\MediaType(
  *             mediaType="application/json",
- *             @OA\Schema(ref="#/components/schemas/UserProfile")
+ *             @OA\Schema(ref="#/components/schemas/UserProfile.php")
  *         )
  *     ),
  *      summary="Create User Profile",
@@ -41,13 +41,13 @@
  * @OA\Patch(
  *      path="/user/me/profile",
  *      operationId="patchUserProfile",
- *      tags={"UserProfile"},
+ *      tags={"UserProfile.php"},
  *      security={{"passport": {"*"}}},
  *      @OA\RequestBody(
  *         required=false,
  *         @OA\MediaType(
  *             mediaType="application/json",
- *             @OA\Schema(ref="#/components/schemas/UserProfile")
+ *             @OA\Schema(ref="#/components/schemas/UserProfile.php")
  *         )
  *     ),
  *      summary="Update User Profile",
@@ -72,7 +72,7 @@
  * @OA\Get(
  *      path="/user/me/profile",
  *      operationId="getUserProfile",
- *      tags={"UserProfile"},
+ *      tags={"UserProfile.php"},
  *      security={{"passport": {}}},
  *      summary="Get User Profile",
  *      description="Bearer token is required",

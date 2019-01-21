@@ -16,7 +16,7 @@
  *         required=true,
  *         @OA\MediaType(
  *             mediaType="application/json",
- *             @OA\Schema(ref="#/components/schemas/NewUser")
+ *             @OA\Schema(ref="#/components/schemas/Register")
  *         )
  *     ),
  *      summary="Register a user",
