@@ -41,7 +41,7 @@
  * @OA\Patch(
  *      path="/user/me/profile",
  *      operationId="patchRegister",
- *      tags={"userProfile"},
+ *      tags={"UserProfile"},
  *      security={{"passport": {"*"}}},
  *      @OA\RequestBody(
  *         required=false,
