@@ -51,7 +51,7 @@
  *         @OA\MediaType(
  *             mediaType="application/json",
  *             @OA\Schema(ref="#/components/schemas/PatchGroup")
- *         )
+ *         ),
  *     ),
  *      summary="Modify a group",
  *      description="Modify a group, and returns the modified information about the group.",
