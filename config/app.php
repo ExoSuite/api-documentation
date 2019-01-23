@@ -54,16 +54,7 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Application Production URL
-    |--------------------------------------------------------------------------
-    |
-    | This URL is used to generate documentation for Confluence
-    |
-    */
-
-    'production_url' => env('PRODUCTION_URL', 'https://api.dev.exosuite.fr'),
+    'asset_url' => env('ASSET_URL', null),
 
     /*
     |--------------------------------------------------------------------------
@@ -103,6 +94,19 @@ return [
     */
 
     'fallback_locale' => 'en',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Faker Locale
+    |--------------------------------------------------------------------------
+    |
+    | This locale will be used by the Faker PHP library when generating fake
+    | data for your database seeds. For example, this will be used to get
+    | localized telephone numbers, street address information and more.
+    |
+    */
+
+    'faker_locale' => 'en_US',
 
     /*
     |--------------------------------------------------------------------------
@@ -161,6 +165,16 @@ return [
         /*
          * Package Service Providers...
          */
+
+        /*
+         * Application Service Providers...
+         */
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
+
     ],
 
     /*
@@ -211,38 +225,5 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
-
-    'debug_blacklist' => [
-        '_ENV' => [
-            'APP_KEY',
-            'DB_PASSWORD',
-            'REDIS_PASSWORD',
-            'MAIL_PASSWORD',
-            'PUSHER_APP_KEY',
-            'PUSHER_APP_SECRET',
-            'MAIL_USERNAME',
-            'MAIL_HOST',
-            'MAIL_PORT',
-            'DB_HOST',
-            'DB_USERNAME',
-            'DB_CONNECTION',
-            'DB_DATABASE'
-        ],
-        '_SERVER' => [
-            'APP_KEY',
-            'DB_PASSWORD',
-            'REDIS_PASSWORD',
-            'MAIL_PASSWORD',
-            'PUSHER_APP_KEY',
-            'PUSHER_APP_SECRET',
-            'MAIL_USERNAME',
-            'MAIL_HOST',
-            'MAIL_PORT',
-            'DB_HOST',
-            'DB_USERNAME',
-            'DB_CONNECTION',
-            'DB_DATABASE'
-        ]
-    ]
 
 ];
