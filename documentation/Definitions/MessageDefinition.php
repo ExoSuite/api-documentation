@@ -3,27 +3,35 @@
  * Created by PhpStorm.
  * User: stan
  * Date: 23/01/19
- * Time: 16:48
+ * Time: 18:25
  */
 
 /**
  * @OA\Post(
- *      path="/group/",
- *      operationId="createGroup",
- *      tags={"Group"},
- *      @OA\RequestBody(
+ *      path="/group/{group}/message/",
+ *      operationId="createMessage",
+ *      tags={"Message"},
+ *      @OA\Parameter(
+ *          name="group",
+ *          description="Group id",
+ *          required=true,
+ *          in="path",
+ *          @OA\Schema(
+ *              type="string"
+ *          )),
+ *     @OA\RequestBody(
  *         required=true,
  *         @OA\MediaType(
  *             mediaType="application/json",
- *             @OA\Schema(ref="#/components/schemas/CreateGroup")
+ *             @OA\Schema(ref="#/components/schemas/CreateMessage")
  *         )
  *     ),
- *      summary="Create a new group",
- *      description="Create a new group, and returns the information about the created group.",
+ *      summary="Create a message",
+ *      description="Create a message.",
  *      @OA\Response(
  *          response=201,
  *          description="Successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/CreateGroupResponse")
+ *          @OA\JsonContent(ref="#/components/schemas/CreateMessageResponse")
  *       ),
  *       @OA\Response(
  *          response=422,
@@ -35,9 +43,9 @@
 
 /**
  * @OA\Patch(
- *      path="/group/{group}/",
- *      operationId="patchGroup",
- *      tags={"Group"},
+ *      path="/group/{group}/message/{message}/",
+ *      operationId="patchMessage",
+ *      tags={"Message"},
  *      @OA\Parameter(
  *          name="group",
  *          description="Group id",
@@ -46,19 +54,27 @@
  *          @OA\Schema(
  *              type="string"
  *          )),
- *      @OA\RequestBody(
+ *     @OA\Parameter(
+ *          name="message",
+ *          description="Message id",
+ *          required=true,
+ *          in="path",
+ *          @OA\Schema(
+ *              type="string"
+ *          )),
+ *     @OA\RequestBody(
  *         required=true,
  *         @OA\MediaType(
  *             mediaType="application/json",
- *             @OA\Schema(ref="#/components/schemas/PatchGroup")
+ *             @OA\Schema(ref="#/components/schemas/PatchMessage")
  *         )
  *     ),
- *      summary="Modify a group",
- *      description="Modify a group, and returns the modified information about the group.",
+ *      summary="Modify message's contents",
+ *      description="Modify message's contents.",
  *      @OA\Response(
  *          response=200,
  *          description="Successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/PatchGroupResponse")
+ *          @OA\JsonContent(ref="#/components/schemas/PatchMessageResponse")
  *       ),
  *       @OA\Response(
  *          response=422,
@@ -70,9 +86,9 @@
 
 /**
  * @OA\Get(
- *      path="/group/{group}/",
- *      operationId="getGroup",
- *      tags={"Group"},
+ *      path="/group/{group}/message/",
+ *      operationId="getMessage",
+ *      tags={"Message"},
  *      @OA\Parameter(
  *          name="group",
  *          description="Group id",
@@ -82,12 +98,12 @@
  *              type="string"
  *          )
  *     ),
- *      summary="Get group information",
- *      description="Get information about a group.",
+ *      summary="Get group messages",
+ *      description="Get all the messages that belong to a group.",
  *      @OA\Response(
  *          response=200,
  *          description="Successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/GetGroupResponse")
+ *          @OA\JsonContent(ref="#/components/schemas/GetMessageResponse")
  *       ),
  *       @OA\Response(
  *          response=422,
@@ -99,9 +115,9 @@
 
 /**
  * @OA\Delete(
- *      path="/group/{group}/",
- *      operationId="deleteGroup",
- *      tags={"Group"},
+ *      path="/group/{group}/message/{message}/",
+ *      operationId="deleteMessage",
+ *      tags={"Message"},
  *      @OA\Parameter(
  *          name="group",
  *          description="Group id",
@@ -109,10 +125,18 @@
  *          in="path",
  *          @OA\Schema(
  *              type="string"
+ *          )),
+ *     @OA\Parameter(
+ *          name="message",
+ *          description="Message id",
+ *          required=true,
+ *          in="path",
+ *          @OA\Schema(
+ *              type="string"
  *          )
  *     ),
- *      summary="Delete a group",
- *      description="Delete a group, and all the associated messages.",
+ *      summary="Delete a message",
+ *      description="Delete a message that belongs to a group.",
  *      @OA\Response(
  *          response=204,
  *          description="Successful operation"

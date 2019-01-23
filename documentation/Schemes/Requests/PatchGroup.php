@@ -17,13 +17,25 @@ class PatchGroup
 {
     /**
      * @var string
-     * @OA\Property(example={"update_user_rights"})
+     * @OA\Property(example="update_user_rights")
      */
     public $request_type;
 
     /**
      * @var string
-     * @OA\Property(example={"add4ac90-1f28-11e9-bab5-134fb5cf2ffe"})
+     * @OA\Property(example="add4ac90-1f28-11e9-bab5-134fb5cf2ffe")
      */
     public $user_id;
+
+    /**
+     * @var bool
+     * @OA\Property(example="true")
+     */
+    public $is_admin;
+
+    /**
+     * @var string
+     * @OA\Property(example="Generic Name")
+     */
+    public $name;
 }
