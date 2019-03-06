@@ -8,12 +8,12 @@
 
 
 /**
- * @OA\Info(title="ExoSuite Users API", version="0.1.0")
+ * @OA\Info(title="ExoSuite Users API", version="1.3.5")
  **/
 
 /**
  * @OA\Server(
- *      url="https://api.dev.exosuite.fr",
+ *      url="https://api.teamexosuite.cloud",
  *      description="ExoSuite Staging API"
  *  )
  */

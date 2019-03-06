@@ -98,7 +98,7 @@ return [
         |--------------------------------------------------------------------------
         */
 
-        'base' => env('L5_SWAGGER_BASE_PATH', 'https://api.dev.exosuite.fr'),
+        'base' => env('L5_SWAGGER_BASE_PATH', 'https://api.teamexosuite.cloud'),
 
         /*
         |--------------------------------------------------------------------------
@@ -148,9 +148,9 @@ return [
             'scheme' => 'https',
             'flows' => [
                 "password" => [
-                    "authorizationUrl" => 'https://api.dev.exosuite.fr/oauth/authorize',
-                    "tokenUrl" => 'https://api.dev.exosuite.fr/oauth/token',
-                    "refreshUrl" => 'https://api.dev.exosuite.fr/token/refresh',
+                    "authorizationUrl" => 'https://api.teamexosuite.cloud/oauth/authorize',
+                    "tokenUrl" => 'https://api.teamexosuite.cloud/oauth/token',
+                    "refreshUrl" => 'https://api.teamexosuite.cloud/token/refresh',
                     "scopes" => []
                 ],
             ],
@@ -224,6 +224,6 @@ return [
     |--------------------------------------------------------------------------
      */
     'constants' => [
-        'L5_SWAGGER_CONST_HOST' => env('L5_SWAGGER_CONST_HOST', 'https://api.dev.exosuite.fr'),
+        'L5_SWAGGER_CONST_HOST' => env('L5_SWAGGER_CONST_HOST', 'https://api.teamexosuite.cloud'),
     ],
 ];
