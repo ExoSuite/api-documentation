@@ -12,7 +12,6 @@
  *     required={"pending_requests_array"}
  *  )
  */
-
 class GetPendingRequestsResponse
 {
     /**

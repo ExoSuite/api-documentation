@@ -11,8 +11,7 @@
  *      schema="PatchDashboardRestriction",
  *      required={"restriction"}
  *  )
-**/
-
+ **/
 class PatchDashboardRestriction
 {
 

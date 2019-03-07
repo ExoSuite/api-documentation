@@ -12,7 +12,6 @@
  *     required={"id", "post_id", "author_id", "content"}
  *  )
  */
-
 class PatchCommentaryResponse
 {
     /**

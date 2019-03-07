@@ -12,7 +12,6 @@
  *     required={"posts_array"}
  *  )
  */
-
 class GetPostsResponse
 {
     /**

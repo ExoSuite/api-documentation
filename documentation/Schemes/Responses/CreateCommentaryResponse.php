@@ -12,7 +12,6 @@
  *     required={"content", "id", "post_id", "author_id"}
  *  )
  */
-
 class CreateCommentaryResponse
 {
     /**

@@ -11,7 +11,6 @@
  *     required={"restriction"}
  *  )
  */
-
 class GetDashboardRestrictionResponse
 {
     /**

@@ -12,7 +12,6 @@
  *     required={"id", "dashboard_id", "author_id", "content"}
  *  )
  */
-
 class PatchPostResponse
 {
     /**

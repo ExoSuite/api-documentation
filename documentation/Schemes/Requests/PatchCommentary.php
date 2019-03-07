@@ -12,7 +12,6 @@
  *     required={"content"}
  *  )
  */
-
 class PatchCommentary
 {
     /**

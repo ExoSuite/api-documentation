@@ -11,7 +11,6 @@
  *     required={"restriction status"}
  *  )
  */
-
 class PatchDashboardRestrictionResponse
 {
 

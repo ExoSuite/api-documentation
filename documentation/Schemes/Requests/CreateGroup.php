@@ -12,7 +12,6 @@
  *     required={"users"}
  *  )
  */
-
 class CreateGroup
 {
     /**

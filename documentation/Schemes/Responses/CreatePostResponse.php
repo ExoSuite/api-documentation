@@ -12,7 +12,6 @@
  *     required={"content", "id", "dashboard_id", "author_id"}
  *  )
  */
-
 class CreatePostResponse
 {
     /**

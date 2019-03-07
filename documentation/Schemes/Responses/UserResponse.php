@@ -6,8 +6,6 @@
  * Time: 20:52
  */
 
-use Webpatser\Uuid\Uuid;
-
 /**
  * @OA\Schema(
  *     schema="UserResponse",

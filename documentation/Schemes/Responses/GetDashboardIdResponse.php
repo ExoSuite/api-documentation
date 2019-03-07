@@ -12,7 +12,6 @@
  *     required={"dashboard_id"}
  *  )
  */
-
 class GetDashboardIdResponse
 {
     /**
