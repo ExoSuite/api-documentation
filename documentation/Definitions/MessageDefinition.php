@@ -98,8 +98,8 @@
  *              type="string"
  *          )
  *     ),
- *      summary="Get group messages",
- *      description="Get all the messages that belong to a group.",
+ *      summary="Get one page of group's messages",
+ *      description="Returns one page of group's messages (Number of messages per page according to MessageController::GET_PER_PAGE)",
  *      @OA\Response(
  *          response=200,
  *          description="Successful operation",
