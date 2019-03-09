@@ -15,25 +15,21 @@
 class NotificationModel
 {
     /**
-     * @var string
      * @OA\Property(type="string", format="uuid")
      */
     public $id;
 
     /**
-     * @var string
-     * @OA\Property(type="string", enum={"tag1", "tag2"})
+     * @OA\Property(ref="#/components/schemas/NotificationType", description="See NotificationType bellow")
      */
     public $type;
 
     /**
-     * @var string
      * @OA\Property(type="string", example="App\Models\User")
      */
     public $notifiable_type;
 
     /**
-     * @var string
      * @OA\Property(type="string", format="uuid")
      */
     public $notifiable_id;
