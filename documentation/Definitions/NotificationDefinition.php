@@ -44,7 +44,7 @@
  *      @OA\Response(
  *          response=200,
  *          description="Successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/GetNotificationResponse")
+ *          @OA\JsonContent(@OA\Items(ref="#/components/schemas/NotificationModel"))
  *       ),
  *       @OA\Response(
  *          response=422,

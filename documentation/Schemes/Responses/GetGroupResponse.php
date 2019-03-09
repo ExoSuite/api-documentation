@@ -16,7 +16,7 @@ class GetGroupResponse
 {
     /**
      * @var string
-     * @OA\Property()
+     * @OA\Property(example="abc")
      */
     public $name;
 
