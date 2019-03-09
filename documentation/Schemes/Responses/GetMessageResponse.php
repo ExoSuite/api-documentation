@@ -16,13 +16,7 @@ class GetMessageResponse
 {
     /**
      * @var array
-     * @OA\Property(@OA\Items(type="message"),
-     *              example={"id => fc7ef8b0-414b-11e9-af5e-6fd5ac914d6a",
-    "contents => 7TdbHw75o4",
-    "group_id => fc7c17b0-414b-11e9-b643-b3b9900c651c",
-    "user_id => fc7a22f0-414b-11e9-9895-b19065e9260e",
-    "created_at => 2019-03-08 02:43:42",
-    "updated_at => 2019-03-08 02:43:42"})
+     * @OA\Property(@OA\Items(ref="#/components/schemas/MessageModel"))
      */
     public $data;
 
@@ -63,8 +57,7 @@ class GetMessageResponse
     public $path;
 
     /**
-     * @var string
-     * @OA\Property(example="30")
+     * @OA\Property(type="integer", example=30)
      */
     public $per_page;
 
