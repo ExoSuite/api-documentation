@@ -20,7 +20,7 @@ class NotificationModel
     public $id;
 
     /**
-     * @OA\Property(ref="#/components/schemas/NotificationType", description="See NotificationType bellow")
+     * @OA\Property(ref="#/components/schemas/NotificationType")
      */
     public $type;
 
