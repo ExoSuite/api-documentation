@@ -164,7 +164,7 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'generate_always' => env('L5_SWAGGER_GENERATE_ALWAYS', false),
+    'generate_always' => env('L5_SWAGGER_GENERATE_ALWAYS', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -172,7 +172,7 @@ return [
     |--------------------------------------------------------------------------
      */
 
-    'generate_yaml_copy' => env('L5_SWAGGER_GENERATE_YAML_COPY', false),
+    'generate_yaml_copy' => env('L5_SWAGGER_GENERATE_YAML_COPY', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -207,7 +207,7 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'operations_sort' => env('L5_SWAGGER_OPERATIONS_SORT', true),
+    'operations_sort' => env('L5_SWAGGER_OPERATIONS_SORT', false),
 
     /*
     |--------------------------------------------------------------------------
