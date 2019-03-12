@@ -1,28 +1,21 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: stan
- * Date: 23/01/19
- * Time: 18:47
+ * User: loiclopez
+ * Date: 2019-03-12
+ * Time: 01:10
  */
 
 /**
  * @OA\Schema(
- *     schema="GetMessageResponse",
- *     required={"data"}
+ *     schema="PaginationScheme"
  *  )
  */
-class GetMessageResponse
+abstract class PaginationScheme
 {
     /**
-     * @var array
-     * @OA\Property(@OA\Items(ref="#/components/schemas/MessageModel"))
-     */
-    public $data;
-
-    /**
      * @var string
-     * @OA\Property(example="http://api.exosuite.local/group/fc7c17b0-414b-11e9-b643-b3b9900c651c/message?page=1")
+     * @OA\Property(example="http://api.exosuite.local/$RESSOURCE_URI?page=1")
      */
     public $first_page_url;
 
@@ -40,19 +33,19 @@ class GetMessageResponse
 
     /**
      * @var string
-     * @OA\Property(example="http://api.exosuite.local/group/fc7c17b0-414b-11e9-b643-b3b9900c651c/message?page=2")
+     * @OA\Property(example="http://api.exosuite.local/$RESSOURCE_URI?page=2")
      */
     public $last_page_url;
 
     /**
      * @var string
-     * @OA\Property(example="http://api.exosuite.local/group/fc7c17b0-414b-11e9-b643-b3b9900c651c/message?page=2")
+     * @OA\Property(example="http://api.exosuite.local/$RESSOURCE_URI?page=2")
      */
     public $next_page_url;
 
     /**
      * @var string
-     * @OA\Property(example="http://api.exosuite.local/group/fc7c17b0-414b-11e9-b643-b3b9900c651c/message")
+     * @OA\Property(example="http://api.exosuite.local/$RESSOURCE_URI")
      */
     public $path;
 

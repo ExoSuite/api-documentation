@@ -17,7 +17,7 @@ class PatchGroup
 {
     /**
      * @var string
-     * @OA\Property(example="update_user_rights || add_user || add_user_as_admin || delete_user || update_group_name")
+     * @OA\Property(ref="#/components/schemas/UpdateGroupRequestType")
      */
     public $request_type;
 

@@ -10,6 +10,7 @@
  * @OA\Post(
  *      path="/group/",
  *      operationId="createGroup",
+ *      security={{"passport": {}}},
  *      tags={"Group"},
  *      @OA\RequestBody(
  *         required=true,
@@ -23,7 +24,7 @@
  *      @OA\Response(
  *          response=201,
  *          description="Successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/CreateGroupResponse")
+ *          @OA\JsonContent(ref="#/components/schemas/GroupModel")
  *       ),
  *       @OA\Response(
  *          response=422,
@@ -37,6 +38,7 @@
  * @OA\Patch(
  *      path="/group/{group}/",
  *      operationId="patchGroup",
+ *      security={{"passport": {}}},
  *      tags={"Group"},
  *      @OA\Parameter(
  *          name="group",
@@ -58,7 +60,7 @@
  *      @OA\Response(
  *          response=200,
  *          description="Successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/PatchGroupResponse")
+ *          @OA\JsonContent(ref="#/components/schemas/GroupModel")
  *       ),
  *       @OA\Response(
  *          response=422,
@@ -72,6 +74,7 @@
  * @OA\Get(
  *      path="/group/{group}/",
  *      operationId="getGroup",
+ *      security={{"passport": {}}},
  *      tags={"Group"},
  *      @OA\Parameter(
  *          name="group",
@@ -87,7 +90,7 @@
  *      @OA\Response(
  *          response=200,
  *          description="Successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/GetGroupResponse")
+ *          @OA\JsonContent(ref="#/components/schemas/GroupModel")
  *       ),
  *       @OA\Response(
  *          response=422,
@@ -101,6 +104,7 @@
  * @OA\Delete(
  *      path="/group/{group}/",
  *      operationId="deleteGroup",
+ *      security={{"passport": {}}},
  *      tags={"Group"},
  *      @OA\Parameter(
  *          name="group",

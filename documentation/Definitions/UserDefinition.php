@@ -65,3 +65,23 @@
  *       )
  *     )
  **/
+
+/**
+ * @OA\Get(
+ *      path="/user/me/groups",
+ *      operationId="getMyGroups",
+ *      tags={"User", "Group"},
+ *      security={{"passport": {}}},
+ *      summary="Get my groups",
+ *      description="Bearer token is required",
+ *      @OA\Response(
+ *          response=200,
+ *          description="successful operation",
+ *          @OA\JsonContent(ref="#/components/schemas/UserGetMyGroupsResponse")
+ *       ),
+ *       @OA\Response(
+ *          response=401,
+ *          description="Unauthorized",
+ *       )
+ *     )
+ **/

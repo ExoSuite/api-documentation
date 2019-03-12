@@ -33,14 +33,4 @@ class MessageModel
      * @OA\Property(type="string", format="uuid")
      */
     public $user_id;
-
-    /**
-     * @OA\Property(type="string", format="date")
-     */
-    public $created_at;
-
-    /**
-     * @OA\Property(type="string", format="date")
-     */
-    public $updated_at;
 }

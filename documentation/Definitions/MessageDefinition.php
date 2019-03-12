@@ -10,6 +10,7 @@
  * @OA\Post(
  *      path="/group/{group}/message/",
  *      operationId="createMessage",
+ *      security={{"passport": {}}},
  *      tags={"Message"},
  *      @OA\Parameter(
  *          name="group",
@@ -45,6 +46,7 @@
  * @OA\Patch(
  *      path="/group/{group}/message/{message}/",
  *      operationId="patchMessage",
+ *      security={{"passport": {}}},
  *      tags={"Message"},
  *      @OA\Parameter(
  *          name="group",
@@ -88,6 +90,7 @@
  * @OA\Get(
  *      path="/group/{group}/message/",
  *      operationId="getMessage",
+ *      security={{"passport": {}}},
  *      tags={"Message"},
  *      @OA\Parameter(
  *          name="group",
@@ -117,6 +120,7 @@
  * @OA\Delete(
  *      path="/group/{group}/message/{message}/",
  *      operationId="deleteMessage",
+ *      security={{"passport": {}}},
  *      tags={"Message"},
  *      @OA\Parameter(
  *          name="group",
