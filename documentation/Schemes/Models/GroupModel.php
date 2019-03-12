@@ -9,7 +9,7 @@
 /**
  * @OA\Schema(
  *     schema="GroupModel",
- *     required={"id", "name", "created_at", "updated_at", "group_members"}
+ *     required={"id", "name", "created_at", "updated_at", "group_members", "latest_messages"}
  *  )
  */
 class GroupModel extends UseTimestampModel
@@ -28,4 +28,9 @@ class GroupModel extends UseTimestampModel
      * @OA\Property(type="array", @OA\Items(ref="#/components/schemas/GroupMemberModel"))
      */
     public $group_members;
+
+    /**
+     * @OA\Property(type="array", @OA\Items(ref="#/components/schemas/MessageModel"))
+     */
+    public $latest_messages;
 }

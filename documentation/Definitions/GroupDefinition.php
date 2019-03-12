@@ -24,7 +24,7 @@
  *      @OA\Response(
  *          response=201,
  *          description="Successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/GroupModel")
+ *          @OA\JsonContent(ref="#/components/schemas/CreateGroupResponse")
  *       ),
  *       @OA\Response(
  *          response=422,

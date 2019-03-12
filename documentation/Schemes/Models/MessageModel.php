@@ -12,7 +12,7 @@
  *     required={"id", "contents", "group_id", "user_id", "created_at", "updated_at"}
  *  )
  */
-class MessageModel
+class MessageModel extends UseTimestampModel
 {
     /**
      * @OA\Property(type="string", format="uuid")
