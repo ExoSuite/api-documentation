@@ -8,20 +8,12 @@
 
 /**
  * @OA\Post(
- *      path="{user}/dashboard/{dashboard}/post/{post}/likes/",
+ *      path="{user}/dashboard/post/{post}/likes/",
  *      operationId="LikePost",
  *      tags={"Like"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(
@@ -52,20 +44,12 @@
 
 /**
  * @OA\Post(
- *      path="{user}/dashboard/{dashboard}/commentary/{commentary}/likes/",
+ *      path="{user}/dashboard/commentary/{commentary}/likes/",
  *      operationId="LikeCommentary",
  *      tags={"Like"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(
@@ -96,20 +80,12 @@
 
 /**
  * @OA\Get(
- *      path="{user}/dashboard/{dashboard}/post/{post}/likes/",
+ *      path="{user}/dashboard/post/{post}/likes/",
  *      operationId="getLikesFromID",
  *      tags={"Like"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(
@@ -128,7 +104,7 @@
  *      @OA\Response(
  *          response=200,
  *          description="Successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/GetlikesFromPostResponse")
+ *          @OA\JsonContent(@OA\Items(ref="#/components/schemas/LikeModel"))
  *       ),
  *       @OA\Response(
  *          response=422,
@@ -140,20 +116,12 @@
 
 /**
  * @OA\Get(
- *      path="{user}/dashboard/{dashboard}/commentary/{commentary}/likes/",
+ *      path="{user}/dashboard/commentary/{commentary}/likes/",
  *      operationId="getLikesFromID",
  *      tags={"Like"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(
@@ -172,7 +140,7 @@
  *      @OA\Response(
  *          response=200,
  *          description="Successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/GetLikesFromCommentaryResponse")
+ *          @OA\JsonContent(@OA\Items(ref="#/components/schemas/LikeModel"))
  *       ),
  *       @OA\Response(
  *          response=422,
@@ -184,21 +152,12 @@
 
 /**
  * @OA\Delete(
- *      path="{user}/dashboard/dashboard/{dashboard}/post/{post}/likes/",
+ *      path="{user}/dashboard//post/{post}/likes/",
  *      operationId="deleteLikeOnPost",
  *      tags={"Like"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )
- *     ),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(
@@ -236,15 +195,6 @@
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )
- *     ),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(

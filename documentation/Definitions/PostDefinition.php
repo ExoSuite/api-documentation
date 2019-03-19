@@ -8,20 +8,12 @@
 
 /**
  * @OA\Post(
- *      path="{user}/dashboard/{dashboard}/post/",
+ *      path="{user}/dashboard/post/",
  *      operationId="createPost",
  *      tags={"Post"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(
@@ -51,20 +43,12 @@
 
 /**
  * @OA\Patch(
- *      path="{user}/dashboard/{dashboard}/post/{post}",
+ *      path="{user}/dashboard/post/{post}",
  *      operationId="updatePost",
  *      tags={"Post"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(
@@ -102,21 +86,12 @@
 
 /**
  * @OA\Get(
- *      path="{user}/dashboard/{dashboard}/post/",
+ *      path="{user}/dashboard/post/",
  *      operationId="getPostsFromDashboard",
  *      tags={"Post"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )
- *     ),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(
@@ -140,21 +115,12 @@
 
 /**
  * @OA\Delete(
- *      path="{user}/dashboard/{dashboard}/post/{post}",
+ *      path="{user}/dashboard/post/{post}",
  *      operationId="deletePost",
  *      tags={"Post"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )
- *     ),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(

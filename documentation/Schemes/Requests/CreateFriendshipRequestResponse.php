@@ -15,26 +15,22 @@
 class CreateFriendshipRequestResponse
 {
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $request_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $requester_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string")
      */
     public $type;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $target_id;
 

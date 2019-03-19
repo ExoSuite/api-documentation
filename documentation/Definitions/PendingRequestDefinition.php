@@ -51,7 +51,7 @@
  *      @OA\Response(
  *          response=200,
  *          description="Successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/GetPendingRequestsResponse")
+ *          @OA\JsonContent(@OA\Items(ref="#/components/schemas/PendingRequestModel"))
  *       ),
  *       @OA\Response(
  *          response=422,

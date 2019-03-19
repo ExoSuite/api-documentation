@@ -9,15 +9,18 @@
 /**
  * @OA\Schema(
  *      schema="PatchDashboardRestriction",
- *      required={"restriction"}
+ *      required={"restriction_field", "restriction_level"}
  *  )
  **/
 class PatchDashboardRestriction
 {
+    /**
+     * @OA\Property(ref="#/components/schemas/RestrictionFields")
+     */
+    public $restriction_field;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(ref="#/components/schemas/Restriction")
      */
-    public $restriction;
+    public $restriction_level;
 }

@@ -12,29 +12,26 @@
  *     required={"id", "dashboard_id", "author_id", "content"}
  *  )
  */
+
 class PatchPostResponse
 {
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $dashboard_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $author_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string")
      */
     public $content;
 }

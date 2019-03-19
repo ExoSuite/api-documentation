@@ -12,29 +12,26 @@
  *     required={"content", "id", "dashboard_id", "author_id"}
  *  )
  */
+
 class CreatePostResponse
 {
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string")
      */
     public $content;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $dashboard_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $author_id;
 

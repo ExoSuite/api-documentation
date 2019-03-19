@@ -3,38 +3,34 @@
  * Created by PhpStorm.
  * User: dupil_l
  * Date: 19-03-04
- * Time: 16:13
+ * Time: 16:33
  */
 
 /**
  * @OA\Schema(
- *     schema="CreateLikeOnPostResponse",
+ *     schema="CreateLikeOnCommentaryResponse",
  *     required={"like_id", "liked_id", "liked_type", "liker_id"}
  *  )
  */
-class CreateLikeOnPostResponse
+class CreateLikeOnCommentaryResponse
 {
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $like_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $liked_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string")
      */
     public $liked_type;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $liker_id;
 

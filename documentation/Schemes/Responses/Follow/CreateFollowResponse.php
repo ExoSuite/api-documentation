@@ -15,20 +15,17 @@
 class CreateFollowResponse
 {
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $follow_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $user_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $followed_id;
 

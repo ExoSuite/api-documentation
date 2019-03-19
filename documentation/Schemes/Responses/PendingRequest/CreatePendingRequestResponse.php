@@ -15,26 +15,22 @@
 class CreatePendingRequestResponse
 {
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $request_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $requester_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $target_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(ref="#/components/schemas/RequestTypesEnum")
      */
     public $type;
 

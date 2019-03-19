@@ -12,29 +12,26 @@
  *     required={"content", "id", "post_id", "author_id"}
  *  )
  */
+
 class CreateCommentaryResponse
 {
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", description="contenu du commentaire")
      */
     public $content;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $post_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $author_id;
 

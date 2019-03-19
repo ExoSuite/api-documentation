@@ -12,29 +12,26 @@
  *     required={"id", "post_id", "author_id", "content"}
  *  )
  */
+
 class PatchCommentaryResponse
 {
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string")
      */
     public $content;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $post_id;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
     public $author_id;
 

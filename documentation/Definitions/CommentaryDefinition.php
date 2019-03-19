@@ -8,20 +8,12 @@
 
 /**
  * @OA\Post(
- *      path="{user}/dashboard/{dashboard}/post/{post}/commentary/",
+ *      path="{user}/dashboard/post/{post}/commentary/",
  *      operationId="createCommentary",
  *      tags={"Commentary"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(
@@ -59,20 +51,12 @@
 
 /**
  * @OA\Patch(
- *      path="{user}/dashboard/{dashboard}/post/{post}/commentary/{commentary}/",
+ *      path="{user}/dashboard/post/{post}/commentary/{commentary}/",
  *      operationId="updateCommentary",
  *      tags={"Commentary"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(
@@ -118,21 +102,12 @@
 
 /**
  * @OA\Get(
- *      path="{user}/dashboard/{dashboard}/post/{post}/commentary/",
+ *      path="{user}/dashboard/post/{post}/commentary/",
  *      operationId="getCommsFromPost",
  *      tags={"Commentary"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )
- *     ),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(
@@ -165,21 +140,12 @@
 
 /**
  * @OA\Delete(
- *      path="{user}/dashboard/{dashboard}/post/{post}/commentary/{commentary}",
+ *      path="{user}/dashboard/post/{post}/commentary/{commentary}",
  *      operationId="deleteComm",
  *      tags={"Commentary"},
  *      @OA\Parameter(
  *          name="user",
  *          description="User id",
- *          required=true,
- *          in="path",
- *          @OA\Schema(
- *              type="string"
- *          )
- *     ),
- *      @OA\Parameter(
- *          name="dashboard",
- *          description="Dashboard id",
  *          required=true,
  *          in="path",
  *          @OA\Schema(
