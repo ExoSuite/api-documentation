@@ -8,7 +8,7 @@
 
 /**
  * @OA\Post(
- *      path="{user}/dashboard/post/{post}/commentary/",
+ *      path="user/{user}/dashboard/post/{post}/commentary/",
  *      operationId="createCommentary",
  *      tags={"Commentary"},
  *      @OA\Parameter(
@@ -51,7 +51,7 @@
 
 /**
  * @OA\Patch(
- *      path="{user}/dashboard/post/{post}/commentary/{commentary}/",
+ *      path="user/{user}/dashboard/post/{post}/commentary/{commentary}/",
  *      operationId="updateCommentary",
  *      tags={"Commentary"},
  *      @OA\Parameter(
@@ -102,7 +102,7 @@
 
 /**
  * @OA\Get(
- *      path="{user}/dashboard/post/{post}/commentary/",
+ *      path="user/{user}/dashboard/post/{post}/commentary/",
  *      operationId="getCommsFromPost",
  *      tags={"Commentary"},
  *      @OA\Parameter(
@@ -140,7 +140,7 @@
 
 /**
  * @OA\Delete(
- *      path="{user}/dashboard/post/{post}/commentary/{commentary}",
+ *      path="user/{user}/dashboard/post/{post}/commentary/{commentary}",
  *      operationId="deleteComm",
  *      tags={"Commentary"},
  *      @OA\Parameter(

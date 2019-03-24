@@ -8,7 +8,7 @@
 
 /**
  * @OA\Patch(
- *      path="{user}/dashboard/restriction",
+ *      path="user/{user}/dashboard/restriction",
  *      operationId="patchDashboardRestriction",
  *      tags={"Dashboard"},
  *      @OA\Parameter(
@@ -43,7 +43,7 @@
 
 /**
  * @OA\Get(
- *      path="{user}/dashboard/restriction/",
+ *      path="user/{user}/dashboard/restriction/",
  *      operationId="getRestriction",
  *      tags={"Dashboard"},
  *      @OA\Parameter(
@@ -71,7 +71,7 @@
 
 /**
  * @OA\Get(
- *      path="{user}/dashboard/",
+ *      path="user/{user}/dashboard/",
  *      operationId="getDashboardId",
  *      tags={"Dashboard"},
  *      @OA\Parameter(
