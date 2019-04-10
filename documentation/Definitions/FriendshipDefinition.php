@@ -8,7 +8,7 @@
 
 /**
  * @OA\Post(
- *      path="{user}/friendship/",
+ *      path="user/{user}/friendship/",
  *      operationId="sendFriendshipRequest",
  *      tags={"Friendship"},
  *      @OA\Parameter(
@@ -91,7 +91,7 @@
 
 /**
  * @OA\Get(
- *      path="{user}/friendship/",
+ *      path="user/{user}/friendship/",
  *      operationId="getFriendships",
  *      tags={"Friendship"},
  *      @OA\Parameter(
@@ -141,7 +141,7 @@
 
 /**
  * @OA\Delete(
- *      path="{user}/friendship/",
+ *      path="user/{user}/friendship/",
  *      operationId="deleteFriendships",
  *      tags={"Friendship"},
  *      @OA\Parameter(

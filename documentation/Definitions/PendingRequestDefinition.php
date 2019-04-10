@@ -8,7 +8,7 @@
 
 /**
  * @OA\Post(
- *      path="{user}/pending_requests/",
+ *      path="user/{user}/pending_requests/",
  *      operationId="createPendingRequest",
  *      tags={"PendingRequest"},
  *      @OA\Parameter(

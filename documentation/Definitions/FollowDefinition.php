@@ -8,7 +8,7 @@
 
 /**
  * @OA\Post(
- *      path="{user}/follows/",
+ *      path="user/{user}/follows/",
  *      operationId="createFollow",
  *      tags={"Follow"},
  *      @OA\Parameter(
@@ -36,7 +36,7 @@
 
 /**
  * @OA\Get(
- *      path="{user}/follows/followers",
+ *      path="user/{user}/follows/followers",
  *      operationId="getFollowers",
  *      tags={"Follow"},
  *      @OA\Parameter(
@@ -69,7 +69,7 @@
 
 /**
  * @OA\Get(
- *      path="{user}/follows/",
+ *      path="user/{user}/follows/",
  *      operationId="checkIfIamFollowing",
  *      tags={"Follow"},
  *      @OA\Parameter(
@@ -98,7 +98,7 @@
 
 /**
  * @OA\Delete(
- *      path="{user}/follows/",
+ *      path="user/{user}/follows/",
  *      operationId="deleteFollow",
  *      tags={"Follow"},
  *      @OA\Parameter(
