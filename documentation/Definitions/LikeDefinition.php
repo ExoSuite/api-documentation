@@ -8,7 +8,7 @@
 
 /**
  * @OA\Post(
- *      path="user/{user}/dashboard/post/{post}/likes/",
+ *      path="user/{user}/dashboard/posts/{post}/likes/",
  *      operationId="LikePost",
  *      tags={"Like"},
  *      @OA\Parameter(
@@ -44,7 +44,7 @@
 
 /**
  * @OA\Post(
- *      path="user/{user}/dashboard/commentary/{commentary}/likes/",
+ *      path="user/{user}/dashboard/commentaries/{commentary}/likes/",
  *      operationId="LikeCommentary",
  *      tags={"Like"},
  *      @OA\Parameter(
@@ -80,7 +80,7 @@
 
 /**
  * @OA\Get(
- *      path="user/{user}/dashboard/post/{post}/likes/",
+ *      path="user/{user}/dashboard/posts/{post}/likes/",
  *      operationId="getLikesFromID",
  *      tags={"Like"},
  *      @OA\Parameter(
@@ -116,7 +116,7 @@
 
 /**
  * @OA\Get(
- *      path="user/{user}/dashboard/commentary/{commentary}/likes/",
+ *      path="user/{user}/dashboard/commentaries/{commentary}/likes/",
  *      operationId="getLikesFromID",
  *      tags={"Like"},
  *      @OA\Parameter(
@@ -152,7 +152,7 @@
 
 /**
  * @OA\Delete(
- *      path="user/{user}/dashboard//post/{post}/likes/",
+ *      path="user/{user}/dashboard//posts/{post}/likes/",
  *      operationId="deleteLikeOnPost",
  *      tags={"Like"},
  *      @OA\Parameter(

@@ -79,7 +79,7 @@
  *      @OA\Response(
  *          response=200,
  *          description="successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/UserResponse")
+ *          @OA\JsonContent(ref="#/components/schemas/GetUserProfileResponse")
  *       ),
  *       @OA\Response(
  *          response=401,
@@ -107,7 +107,7 @@
  *      @OA\Response(
  *          response=200,
  *          description="successful operation",
- *          @OA\JsonContent(ref="#/components/schemas/UserResponse")
+ *          @OA\JsonContent(ref="#/components/schemas/GetUserProfileResponse")
  *       ),
  *       @OA\Response(
  *          response=401,

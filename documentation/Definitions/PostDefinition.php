@@ -8,7 +8,7 @@
 
 /**
  * @OA\Post(
- *      path="user/{user}/dashboard/post/",
+ *      path="user/{user}/dashboard/posts/",
  *      operationId="createPost",
  *      tags={"Post"},
  *      @OA\Parameter(
@@ -43,7 +43,7 @@
 
 /**
  * @OA\Patch(
- *      path="user/{user}/dashboard/post/{post}",
+ *      path="user/{user}/dashboard/posts/{post}",
  *      operationId="updatePost",
  *      tags={"Post"},
  *      @OA\Parameter(
@@ -86,7 +86,7 @@
 
 /**
  * @OA\Get(
- *      path="user/{user}/dashboard/post/",
+ *      path="user/{user}/dashboard/posts/",
  *      operationId="getPostsFromDashboard",
  *      tags={"Post"},
  *      @OA\Parameter(
@@ -115,7 +115,7 @@
 
 /**
  * @OA\Delete(
- *      path="user/{user}/dashboard/post/{post}",
+ *      path="user/{user}/dashboard/posts/{post}",
  *      operationId="deletePost",
  *      tags={"Post"},
  *      @OA\Parameter(

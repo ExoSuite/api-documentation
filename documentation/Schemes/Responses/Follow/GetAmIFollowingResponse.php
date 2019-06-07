@@ -9,15 +9,23 @@
 /**
  * @OA\Schema(
  *     schema="GetAmIFollowingResponse",
- *     required={"status"}
+ *     required={"user_id", "id", "followed_id", "created_at", "updated_at"}
  *  )
  */
-class GetAmIFollowingResponse
+class GetAmIFollowingResponse extends UseTimestampModel
 {
     /**
-     * @var boolean
-     * @OA\Property()
+     * @OA\Property(type="string", format="uuid")
      */
-    public $status;
+    public $id;
 
+    /**
+     * @OA\Property(type="string", format="uuid")
+     */
+    public $user_id;
+
+    /**
+     * @OA\Property(type="string", format="uuid")
+     */
+    public $followed_id;
 }

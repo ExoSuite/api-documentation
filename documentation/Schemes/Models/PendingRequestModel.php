@@ -9,7 +9,7 @@
 /**
  * @OA\Schema(
  *     schema="PendingRequestModel",
- *     required={"request_id", "requester_id", "type", "target_id", "created_at", "updated_at"}
+ *     required={"request_id", "requester_id", "type", "target_id", "user", "created_at", "updated_at"}
  *  )
  */
 class PendingRequestModel extends UseTimestampModel
@@ -34,4 +34,8 @@ class PendingRequestModel extends UseTimestampModel
      */
     public $target_id;
 
+    /**
+     * @OA\Property(ref="#/components/schemas/UserModel")
+     */
+    public $user;
 }
