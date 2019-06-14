@@ -1,18 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: dupil_l
- * Date: 19-03-18
- * Time: 16:45
- */
+
 
 /**
  * @OA\Schema(
- *     schema="FollowModel",
- *     required={"id", "user_id", "followed_id", "created_at", "updated_at"}
+ *     schema="FriendshipModel",
+ *     required={"id", "user_id", "friend_id", "friend", "created_at", "updated_at"}
  *  )
  */
-class FollowModel extends UseTimestampModel
+class FriendshipModel
 {
     /**
      * @OA\Property(type="string", format="uuid")
@@ -29,4 +24,8 @@ class FollowModel extends UseTimestampModel
      */
     public $followed_id;
 
+    /**
+     * @OA\Property(ref="#/components/schemas/UserModel")
+     */
+    public $friend;
 }

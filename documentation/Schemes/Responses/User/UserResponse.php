@@ -9,38 +9,40 @@
 /**
  * @OA\Schema(
  *     schema="UserResponse",
- *     required={"first_name","last_name", "email", "nick_name", "id"}
+ *     required={"first_name","last_name", "email", "nick_name", "id", "profile", "created_at", "updated_at"}
  *  )
  */
-class UserResponse
+class UserResponse extends UseTimestampModel
 {
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", example="jean.smith@something.xx")
      */
     public $email;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", example="Jean")
      */
     public $first_name;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", example="Smith")
      */
     public $last_name;
 
     /**
-     * @var string
-     * @OA\Property()
+     * @OA\Property(type="string", example="NicknameX")
      */
     public $nick_name;
 
     /**
      * @var string
-     * @OA\Property(example="b01126c8-1d1f-11e9-ab14-d663bd873d93")
+     * @OA\Property(type="string", format="uuid")
      */
     public $id;
+
+    /**
+     * @var \Illuminate\Database\Eloquent\Model
+     * @OA\Property(ref="#/components/schemas/UserProfileModel")
+     */
+    public $profile;
 }

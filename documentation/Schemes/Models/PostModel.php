@@ -9,7 +9,7 @@
 /**
  * @OA\Schema(
  *     schema="PostModel",
- *     required={"id", "content", "dashboard_id", "author_id", "created_at", "updated_at"}
+ *     required={"id", "content", "dashboard_id", "author_id", "author", "commentaries", "created_at", "updated_at"}
  *  )
  */
 class PostModel extends UseTimestampModel
@@ -34,4 +34,13 @@ class PostModel extends UseTimestampModel
      */
     public $author_id;
 
+    /**
+     * @OA\Property(ref="#/components/schemas/UserModel")
+     */
+    public $author;
+
+    /**
+     * @OA\Property(type="array", maxLength=3, @OA\Items(ref="#/components/schemas/CommentaryModel"))
+     */
+    public $commentaries;
 }

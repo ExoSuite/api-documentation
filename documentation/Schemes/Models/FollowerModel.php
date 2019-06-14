@@ -3,16 +3,16 @@
  * Created by PhpStorm.
  * User: dupil_l
  * Date: 19-03-18
- * Time: 16:35
+ * Time: 16:45
  */
 
 /**
  * @OA\Schema(
- *     schema="CommentaryModel",
- *     required={"id", "content", "post_id", "author_id", "author", "created_at", "updated_at"}
+ *     schema="FollowerModel",
+ *     required={"id", "user_id", "followed_id", "followers", "created_at", "updated_at"}
  *  )
  */
-class CommentaryModel extends UseTimestampModel
+class FollowerModel extends UseTimestampModel
 {
     /**
      * @OA\Property(type="string", format="uuid")
@@ -20,23 +20,17 @@ class CommentaryModel extends UseTimestampModel
     public $id;
 
     /**
-     * @OA\Property(type="string", example="this is a post.")
+     * @OA\Property(type="string", format="uuid")
      */
-    public $content;
+    public $user_id;
 
     /**
      * @OA\Property(type="string", format="uuid")
      */
-    public $post_id;
-
-    /**
-     * @OA\Property(type="string", format="uuid")
-     */
-    public $author_id;
+    public $followed_id;
 
     /**
      * @OA\Property(ref="#/components/schemas/UserModel")
      */
-    public $author;
-
+    public $followers;
 }
