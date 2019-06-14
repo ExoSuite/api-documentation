@@ -19,7 +19,9 @@ class CreateCheckpointResponse
     public $type;
 
     /**
-     * @OA\Property(type="array", @OA\Items(ref="#/components/schemas/PostgisPointExample"))
+     * @var array
+     * @OA\Property(type="array", @OA\Items(type="array",  @OA\Items(type="number"), example={"longitude : 3.14",
+     *     "latitude : 42.0"}))
      */
     public $location;
 
