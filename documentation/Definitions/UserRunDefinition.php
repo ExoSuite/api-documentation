@@ -31,7 +31,7 @@
 /**
  * @OA\Patch(
  *      path="/user/me/run/{run}/user_run/{user_run}/",
- *      operationId="patchTime",
+ *      operationId="patchUserRun",
  *      tags={"UserRun"},
  *      @OA\Parameter(
  *          name="run",
@@ -218,7 +218,7 @@
 /**
  * @OA\Get(
  *      path="/user/{user}/run/{run}/user_run/",
- *      operationId="getSomeoneTimes",
+ *      operationId="getSomeoneUserRuns",
  *      tags={"UserRun"},
  *     @OA\Parameter(
  *          name="user",
