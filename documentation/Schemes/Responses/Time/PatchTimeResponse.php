@@ -3,7 +3,7 @@
 /**
  * @OA\Schema(
  *     schema="PatchTimeResponse",
- *     required={"id", "current_time", "check_point_id", "run_id"}
+ *     required={"id", "current_time", "check_point_id", "run_id", "user_run_id"}
  *  )
  */
 class PatchTimeResponse
@@ -27,4 +27,9 @@ class PatchTimeResponse
      * @OA\Property(type="string", format="uuid")
      */
     public $run_id;
+
+    /**
+     * @OA\Property(type="string", format="uuid")
+     */
+    public $user_run_id;
 }
