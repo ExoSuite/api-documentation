@@ -205,3 +205,65 @@
  *       )
  *     )
  **/
+
+/**
+ * @OA\Get(
+ *      path="/user/{user}/run/search",
+ *      operationId="searchUserRun",
+ *      security={{"passport": {}}},
+ *      tags={"Run"},
+ *      @OA\Parameter(
+ *          name="text",
+ *          required=true,
+ *          in="query",
+ *          description="The text to search a run",
+ *          allowEmptyValue=false,
+ *          @OA\Schema(
+ *              type="string"
+ *          )
+ *     ),
+ *      summary="Search someone's runs",
+ *      description="Search and return simple array of runs.",
+ *      @OA\Response(
+ *          response=200,
+ *          description="Successful operation",
+ *          @OA\JsonContent(ref="#/components/schemas/SearchRunsResponse")
+ *       ),
+ *       @OA\Response(
+ *          response=422,
+ *          description="The given parameters were faulty",
+ *          @OA\JsonContent(ref="#/components/schemas/ErrorResponse")
+ *       )
+ *     )
+ **/
+
+/**
+ * @OA\Get(
+ *      path="/user/me/run/search",
+ *      operationId="searchMyUserRun",
+ *      security={{"passport": {}}},
+ *      tags={"Run", "My"},
+ *      @OA\Parameter(
+ *          name="text",
+ *          required=true,
+ *          in="query",
+ *          description="The text to search a run",
+ *          allowEmptyValue=false,
+ *          @OA\Schema(
+ *              type="string"
+ *          )
+ *     ),
+ *      summary="Search my runs",
+ *      description="Search and return simple array of runs.",
+ *      @OA\Response(
+ *          response=200,
+ *          description="Successful operation",
+ *          @OA\JsonContent(ref="#/components/schemas/SearchRunsResponse")
+ *       ),
+ *       @OA\Response(
+ *          response=422,
+ *          description="The given parameters were faulty",
+ *          @OA\JsonContent(ref="#/components/schemas/ErrorResponse")
+ *       )
+ *     )
+ **/
