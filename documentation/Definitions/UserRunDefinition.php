@@ -4,6 +4,7 @@
  * @OA\Post(
  *      path="/user/me/run/{run]/user_run/",
  *      operationId="createUserRun",
+ *      security={{"passport": {}}},
  *      tags={"UserRun"},
  *     @OA\Parameter(
  *          name="run",
@@ -32,6 +33,7 @@
  * @OA\Patch(
  *      path="/user/me/run/{run}/user_run/{user_run}/",
  *      operationId="patchUserRun",
+ *      security={{"passport": {}}},
  *      tags={"UserRun"},
  *      @OA\Parameter(
  *          name="run",
@@ -68,6 +70,7 @@
  * @OA\Delete(
  *      path="/user/me/run/{run}/user_run/{user_run}/",
  *      operationId="deleteUserRun",
+ *      security={{"passport": {}}},
  *      tags={"UserRun"},
  *      @OA\Parameter(
  *          name="run",
@@ -105,6 +108,7 @@
  * @OA\Get(
  *      path="/user/me/run/{run}/user_run/{user_run}/",
  *      operationId="getMyUserRunByID",
+ *      security={{"passport": {}}},
  *      tags={"UserRun"},
  *      @OA\Parameter(
  *          name="run",
@@ -143,6 +147,7 @@
  * @OA\Get(
  *      path="/user/{user}/run/{run}/user_run/{user_run}/",
  *      operationId="getSomeoneUserRunByID",
+ *      security={{"passport": {}}},
  *      tags={"UserRun"},
  *     @OA\Parameter(
  *          name="user",
@@ -190,6 +195,7 @@
  * @OA\Get(
  *      path="/user/me/run/{run}/user_run/",
  *      operationId="getMyUserRuns",
+ *      security={{"passport": {}}},
  *      tags={"UserRun"},
  *     @OA\Parameter(
  *          name="run",
@@ -219,6 +225,7 @@
  * @OA\Get(
  *      path="/user/{user}/run/{run}/user_run/",
  *      operationId="getSomeoneUserRuns",
+ *      security={{"passport": {}}},
  *      tags={"UserRun"},
  *     @OA\Parameter(
  *          name="user",

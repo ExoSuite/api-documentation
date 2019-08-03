@@ -4,6 +4,7 @@
  * @OA\Post(
  *      path="/user/me/run/",
  *      operationId="createRun",
+ *      security={{"passport": {}}},
  *      tags={"Run"},
  *      @OA\RequestBody(
  *         required=true,
@@ -31,6 +32,7 @@
  * @OA\Patch(
  *      path="/user/me/run/{run}/",
  *      operationId="patchRun",
+ *      security={{"passport": {}}},
  *      tags={"Run"},
  *      @OA\Parameter(
  *          name="run",
@@ -66,6 +68,7 @@
  * @OA\Delete(
  *      path="/user/me/run/{run}/",
  *      operationId="deleteRun",
+ *      security={{"passport": {}}},
  *      tags={"Run"},
  *      @OA\Parameter(
  *          name="run",
@@ -94,6 +97,7 @@
  * @OA\Get(
  *      path="/user/me/run/{run}/",
  *      operationId="getMyRunByID",
+ *      security={{"passport": {}}},
  *      tags={"Run"},
  *      @OA\Parameter(
  *          name="run",
@@ -123,6 +127,7 @@
  * @OA\Get(
  *      path="/user/{user}/run/{run}/",
  *      operationId="getSomeoneRunByID",
+ *      security={{"passport": {}}},
  *      tags={"Run"},
  *     @OA\Parameter(
  *          name="user",
@@ -161,6 +166,7 @@
  * @OA\Get(
  *      path="/user/me/run/",
  *      operationId="getMyRuns",
+ *      security={{"passport": {}}},
  *      tags={"Run"},
  *      summary="Get all my runs",
  *      description="Get information about your runs (including their checkpoints and their associated times). Paginates results, with RunController::GET_PER_PAGE runs per page.",
@@ -181,6 +187,7 @@
  * @OA\Get(
  *      path="/user/{user}/run/",
  *      operationId="getSomeoneRuns",
+ *      security={{"passport": {}}},
  *      tags={"Run"},
  *     @OA\Parameter(
  *          name="user",

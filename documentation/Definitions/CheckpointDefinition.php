@@ -4,6 +4,7 @@
  * @OA\Post(
  *      path="/user/me/run/{run]/checkpoint/",
  *      operationId="createCheckPoint",
+ *      security={{"passport": {}}},
  *      tags={"Checkpoint"},
  *     @OA\Parameter(
  *          name="run",
@@ -39,6 +40,7 @@
  * @OA\Patch(
  *      path="/user/me/run/{run}/checkpoint/{checkpoint}/",
  *      operationId="patchCheckpoint",
+ *      security={{"passport": {}}},
  *      tags={"Checkpoint"},
  *      @OA\Parameter(
  *          name="run",
@@ -82,6 +84,7 @@
  * @OA\Delete(
  *      path="/user/me/run/{run}/checkpoint/{checkpoint}/",
  *      operationId="deleteCheckpoint",
+ *      security={{"passport": {}}},
  *      tags={"Checkpoint"},
  *      @OA\Parameter(
  *          name="run",
@@ -119,6 +122,7 @@
  * @OA\Get(
  *      path="/user/me/run/{run}/checkpoint/{checkpoint}/",
  *      operationId="getMyCheckpointByID",
+ *      security={{"passport": {}}},
  *      tags={"Checkpoint"},
  *      @OA\Parameter(
  *          name="run",
@@ -157,6 +161,7 @@
  * @OA\Get(
  *      path="/user/{user}/run/{run}/checkpoint/{checkpoint}/",
  *      operationId="getSomeoneCheckpointByID",
+ *      security={{"passport": {}}},
  *      tags={"Checkpoint"},
  *     @OA\Parameter(
  *          name="user",
@@ -204,6 +209,7 @@
  * @OA\Get(
  *      path="/user/me/run/{run}/checkpoint/",
  *      operationId="getMyCheckpoints",
+ *      security={{"passport": {}}},
  *      tags={"Checkpoint"},
  *     @OA\Parameter(
  *          name="run",
@@ -233,6 +239,7 @@
  * @OA\Get(
  *      path="/user/{user}/run/{run}/checkpoint/",
  *      operationId="getSomeoneCheckpoints",
+ *      security={{"passport": {}}},
  *      tags={"Checkpoint"},
  *     @OA\Parameter(
  *          name="user",

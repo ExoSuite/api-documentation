@@ -10,6 +10,7 @@
  * @OA\Patch(
  *      path="/notification/{notification?}/",
  *      operationId="patchNotification",
+ *      security={{"passport": {}}},
  *      tags={"Notification"},
  *      @OA\Parameter(
  *          name="notification",
@@ -38,6 +39,7 @@
  * @OA\Get(
  *      path="/notification/",
  *      operationId="getNotification",
+ *      security={{"passport": {}}},
  *      tags={"Notification"},
  *      summary="Get user notifications",
  *      description="Get all the notifications of the currently logged user.",
@@ -58,6 +60,7 @@
  * @OA\Delete(
  *      path="/notification/{notification?}/",
  *      operationId="deleteNotification",
+ *      security={{"passport": {}}},
  *      tags={"Notification"},
  *      @OA\Parameter(
  *          name="notification",

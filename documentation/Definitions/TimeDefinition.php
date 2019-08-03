@@ -4,6 +4,7 @@
  * @OA\Post(
  *      path="/user/me/run/{run]/checkpoint/{checkpoint}/time/",
  *      operationId="createTime",
+ *      security={{"passport": {}}},
  *      tags={"Time"},
  *     @OA\Parameter(
  *          name="run",
@@ -47,6 +48,7 @@
  * @OA\Patch(
  *      path="/user/me/run/{run}/checkpoint/{checkpoint}/time/{time}/",
  *      operationId="patchTime",
+ *      security={{"passport": {}}},
  *      tags={"Time"},
  *      @OA\Parameter(
  *          name="run",
@@ -98,6 +100,7 @@
  * @OA\Delete(
  *      path="/user/me/run/{run}/checkpoint/{checkpoint}/time/{time}/",
  *      operationId="deleteTime",
+ *      security={{"passport": {}}},
  *      tags={"Time"},
  *      @OA\Parameter(
  *          name="run",
@@ -144,6 +147,7 @@
  * @OA\Get(
  *      path="/user/me/run/{run}/checkpoint/{checkpoint}/time/{time}/",
  *      operationId="getMyTimeByID",
+ *      security={{"passport": {}}},
  *      tags={"Time"},
  *      @OA\Parameter(
  *          name="run",
@@ -191,6 +195,7 @@
  * @OA\Get(
  *      path="/user/{user}/run/{run}/checkpoint/{checkpoint}/time/{time}/",
  *      operationId="getSomeoneTimeByID",
+ *      security={{"passport": {}}},
  *      tags={"Time"},
  *     @OA\Parameter(
  *          name="user",
@@ -247,6 +252,7 @@
  * @OA\Get(
  *      path="/user/me/run/{run}/checkpoint/{checkpoint}/time/",
  *      operationId="getMyTimes",
+ *      security={{"passport": {}}},
  *      tags={"Time"},
  *     @OA\Parameter(
  *          name="run",
@@ -285,6 +291,7 @@
  * @OA\Get(
  *      path="/user/{user}/run/{run}/checkpoint/{checkpoint}/time/",
  *      operationId="getSomeoneTimes",
+ *      security={{"passport": {}}},
  *      tags={"Time"},
  *     @OA\Parameter(
  *          name="user",
