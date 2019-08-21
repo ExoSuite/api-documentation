@@ -9,7 +9,7 @@
 /**
  * @OA\Schema(
  *     schema="PatchMessageResponse",
- *     required={"contents", "user_id", "group_id", "id"}
+ *     required={"contents", "user_id", "group_id", "id", "user"}
  *  )
  */
 class PatchMessageResponse
@@ -37,4 +37,9 @@ class PatchMessageResponse
      * @OA\Property(example="67eeca70-19f4-1ae9-b122-469c47252c92")
      */
     public $id;
+
+    /**
+     * @OA\Property(ref="#/components/schemas/UserMessageModel")
+     */
+    public $user;
 }

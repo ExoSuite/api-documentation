@@ -9,10 +9,10 @@
 /**
  * @OA\Schema(
  *     schema="CreateMessageResponse",
- *     required={"contents", "user_id", "group_id", "id"}
+ *     required={"contents", "user_id", "group_id", "id", "user"}
  *  )
  */
-class CreateMessageResponse
+class CreateMessageResponse extends UseTimestampModel
 {
     /**
      * @var string
@@ -34,4 +34,9 @@ class CreateMessageResponse
      * @OA\Property(type="string", format="uuid")
      */
     public $id;
+
+    /**
+     * @OA\Property(ref="#/components/schemas/UserMessageModel")
+     */
+    public $user;
 }

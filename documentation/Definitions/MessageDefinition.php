@@ -141,9 +141,10 @@
  *     ),
  *      summary="Delete a message",
  *      description="Delete a message that belongs to a group.",
- *      @OA\Response(
- *          response=204,
- *          description="Successful operation"
+ *       @OA\Response(
+ *          response=200,
+ *          description="Successful operation",
+ *          @OA\JsonContent(ref="#/components/schemas/MessageModel")
  *       ),
  *       @OA\Response(
  *          response=422,
