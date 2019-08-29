@@ -42,11 +42,11 @@
  *      security={{"passport": {}}},
  *      tags={"Notification"},
  *      summary="Get user notifications",
- *      description="Get all the notifications of the currently logged user.",
+ *      description="Get all the notifications of the currently logged user. /!\ The notification's content may be proper to the NotificationType (field type). /!\",
  *      @OA\Response(
  *          response=200,
  *          description="Successful operation",
- *          @OA\JsonContent(type="array", @OA\Items(ref="#/components/schemas/NotificationModel"))
+ *          @OA\JsonContent(ref="#/components/schemas/GetNotificationsResponse")
  *       ),
  *       @OA\Response(
  *          response=422,
