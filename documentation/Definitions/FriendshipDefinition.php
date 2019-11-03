@@ -120,6 +120,35 @@
 
 /**
  * @OA\Get(
+ *      path="user/{user}/friendship/existingFriendship",
+ *      operationId="getMyFriendshipWith",
+ *      tags={"Friendship"},
+ *      @OA\Parameter(
+ *          name="user",
+ *          description="User id",
+ *          required=true,
+ *          in="path",
+ *          @OA\Schema(
+ *              type="string"
+ *          )
+ *     ),
+ *      summary="Get if you are friend with the user $user.",
+ *      description="Returns false if there is a friendship request still pending or if a Friendship relation with the target $user does not exist. Returns true otherwise.",
+ *      @OA\Response(
+ *          response=200,
+ *          description="Successful operation",
+ *          @OA\JsonContent(ref="#/components/schemas/GetMyFriendshipWithResponse")
+ *       ),
+ *       @OA\Response(
+ *          response=422,
+ *          description="The given parameters were faulty",
+ *          @OA\JsonContent(ref="#/components/schemas/ErrorResponse")
+ *       )
+ *     )
+ **/
+
+/**
+ * @OA\Get(
  *      path="/me/friendship/",
  *      operationId="getMyFriendships",
  *      tags={"Friendship"},
