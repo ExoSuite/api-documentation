@@ -37,6 +37,41 @@
  **/
 
 /**
+ * @OA\Post(
+ *      path="/user/me/run/{run]/checkpoint/checkpoints",
+ *      operationId="createCheckPoints",
+ *      security={{"passport": {}}},
+ *      tags={"Checkpoint"},
+ *     @OA\Parameter(
+ *          name="run",
+ *          description="Run id",
+ *          required=true,
+ *          in="path",
+ *          @OA\Schema(
+ *              type="string"
+ *          )),
+ *      @OA\RequestBody(
+ *         required=true,
+ *         @OA\MediaType(
+ *             mediaType="application/json",
+ *             @OA\Schema(ref="#/components/schemas/CreateCheckpoints")
+ *         )
+ *     ),
+ *      summary="Create multiple checkpoints at the same time in the wanted order.",
+ *      description="Create multiple checkpoints by providing an array of data containing checkpoints' hints on their order (field id) and their location (field location).",
+ *      @OA\Response(
+ *          response=204,
+ *          description="Successful operation",
+ *       ),
+ *       @OA\Response(
+ *          response=422,
+ *          description="The given parameters were faulty",
+ *          @OA\JsonContent(ref="#/components/schemas/ErrorResponse")
+ *       )
+ *     )
+ **/
+
+/**
  * @OA\Patch(
  *      path="/user/me/run/{run}/checkpoint/{checkpoint}/",
  *      operationId="patchCheckpoint",
