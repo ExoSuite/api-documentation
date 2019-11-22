@@ -9,7 +9,7 @@
 class CustomCheckpointsSetModel
 {
     /**
-     * @OA\Property(type="number", example="1")
+     * @OA\Property(type="number", example=1)
      */
     public $id;
 
